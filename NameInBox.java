@@ -16,9 +16,12 @@ public class NameInBox {
 				 System.out.print("-");
 			else if(j==0||j==col-1)
 				 System.out.print("|");
-			else if(i==rows-3&&j==col-(name.length()+2)) {
-				for(int k=0;k<name.length();k++) System.out.print(name.charAt(k));
-				j=j+name.length()-1;
+			else if(i==rows-3&&j==col-(name.length()+3)) {
+				for(int k=0;k<name.length();k++){
+					System.out.print(name.charAt(k));
+				        j++;
+				}
+				j=j-1;
 			}
 			else System.out.print(" ");
 			
